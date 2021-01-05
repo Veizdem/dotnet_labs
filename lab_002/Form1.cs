@@ -26,5 +26,12 @@ namespace lab_002
         {
             MessageBox.Show("Событие Hover!");
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            label1.Text = "Microsoft Visual C# 2019";
+            button1.Text = "Нажми меня!";
+            this.Text = "Приветствие";
+        }
     }
 }

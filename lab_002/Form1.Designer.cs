@@ -45,9 +45,9 @@ namespace lab_002
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(46, 110);
+            this.button1.Location = new System.Drawing.Point(27, 112);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(82, 23);
+            this.button1.Size = new System.Drawing.Size(122, 23);
             this.button1.TabIndex = 1;
             this.button1.Text = "Нажми меня";
             this.button1.UseVisualStyleBackColor = true;
@@ -62,6 +62,7 @@ namespace lab_002
             this.Controls.Add(this.label1);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
