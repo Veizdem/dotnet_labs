@@ -13,3 +13,4 @@ jobs:
         projectKey: "dotnet_labs"
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
+        fetch-depth: 0
