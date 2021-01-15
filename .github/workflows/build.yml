@@ -5,6 +5,9 @@ jobs:
     name: SonarQube Trigger
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
+      with:
+        fetch-depth: 0
     - uses: actions/checkout@master
     - name: SonarQube Scan
       uses: kitabisa/sonarqube-action@master
@@ -13,4 +16,3 @@ jobs:
         projectKey: "dotnet_labs"
         host: ${{ secrets.SONARQUBE_HOST }}
         login: ${{ secrets.SONARQUBE_TOKEN }}
-        fetch-depth: 0
