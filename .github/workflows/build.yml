@@ -6,10 +6,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
+      with:
+        fetch-depth: 0
     - name: SonarQube Scan
       uses: kitabisa/sonarqube-action@master
       with:
-        fetch-depth: 0
         projectName: "dotnet_labs"
         projectKey: "dotnet_labs"
         host: ${{ secrets.SONARQUBE_HOST }}
