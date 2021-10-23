@@ -9,6 +9,7 @@ jobs:
     - name: SonarQube Scan
       uses: kitabisa/sonarqube-action@master
       with:
+        fetch-depth: 0
         projectName: "dotnet_labs"
         projectKey: "dotnet_labs"
         host: ${{ secrets.SONARQUBE_HOST }}
